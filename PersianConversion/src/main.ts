@@ -6,7 +6,6 @@ import { environment } from './environments/environment';
 
 import "./semantic/dist/semantic.min.js";
 
-
 if (environment.production) {
   enableProdMode();
 }
