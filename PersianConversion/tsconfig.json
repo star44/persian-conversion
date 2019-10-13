@@ -14,7 +14,7 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "types": ["node", "jquery", "semantic-ui"],
+    "types": ["node", "jquery"],
     "lib": [
       "es2018",
       "dom"

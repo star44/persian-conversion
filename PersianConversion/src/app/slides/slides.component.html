@@ -4,5 +4,11 @@
 
     <p>What does this phrase say?</p>
 
-    
+    <div *ngFor="let word of phrases[0].sentence.split(' ')">
+        <button class="ui button">{{word}}</button>
+    </div>
+
+
+    <button class="ui button">Next</button>
+
 </div>
