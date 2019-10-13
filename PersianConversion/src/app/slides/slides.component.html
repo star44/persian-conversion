@@ -4,11 +4,20 @@
 
     <p>What does this phrase say?</p>
 
-    <div *ngFor="let word of phrases[0].sentence.split(' ')">
-        <button class="ui button">{{word}}</button>
+
+    <div>
+        <div class="words" *ngFor="let word of phrase.sentence.split(' ').reverse()">
+            <button class="ui button green">{{word}}</button>
+        </div>
+        <div class="ui divider hidden"></div>
     </div>
 
+    <p>{{showTranslation ? phrase.translation : ""}}</p>
+    
+    <button class="ui button red" (click)="toggleTranslation()">See Translation</button>
+    <div class="ui divider"></div>
 
-    <button class="ui button">Next</button>
+    <button class="ui button" (click)="play()">Replay</button>
+    <button class="ui button" (click)="shiftPhrases()">Next</button>
 
 </div>
